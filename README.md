@@ -6,4 +6,4 @@ I have used:
 - CSS
 - jQuery
 
-[Live view](http://nataliamazurczak.pl/carousel/.)
+https://ps-fedorova.github.io/full-screen-carousel/
