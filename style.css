@@ -10,7 +10,7 @@ body {
   position: relative;
 }
 
-ul {
+.carousel__list {
   width: 50000000000000vw;
   list-style-type: none;
   padding: 0;
@@ -21,7 +21,7 @@ ul {
   transition: all 1s;
 }
 
-li {
+.carousel__item {
   width: 100vw;
   float: left;
 }
