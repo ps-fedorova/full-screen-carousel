@@ -1,5 +1,5 @@
-const list = carousel.querySelector('ul');
-const listElems = carousel.querySelectorAll('li');
+const list = carousel.querySelector('.carousel__list');
+const listElems = carousel.querySelectorAll('.carousel__item');
 
 let width = 100; // ширина картинки
 let position = 0; // положение ленты прокрутки

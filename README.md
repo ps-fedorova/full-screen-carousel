@@ -4,6 +4,6 @@ Project - Full Screen Carousel
 I have used: 
 - HTML
 - CSS
-- jQuery
+- JS
 
 [Live view](http://nataliamazurczak.pl/carousel/.)
