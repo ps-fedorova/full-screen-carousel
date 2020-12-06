@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+ul {
+  width: 50000000000000vw;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 1s;
+}
+
+li {
+  width: 100vw;
+  float: left;
+}
+
+.list__item {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.angles {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+  position: absolute;
+}
+
+[class*="fa-angle"] {
+  opacity: 0.7;
+  color: white;
+  font-size: 100px;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+[class*="fa-angle"]:hover {
+  opacity: 1;
+}
+
+.fa-angle-left {
+  margin-left: 1vw;
+  float: left;
+}
+
+.fa-angle-right {
+  margin-right: 1vw;
+  float: right;
+}
+
+.list {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
