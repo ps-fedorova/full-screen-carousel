@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Carousel</title>
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div class="carousel" id="carousel">
-			<ul class="carousel__list">
-				<li class="carousel__item"><img class="carousel__img" src="images/apple-big.jpeg" alt="1"></li>
-				<li class="carousel__item"><img class="carousel__img" src="images/sparrow-big.jpeg" alt="2"></li>
-				<li class="carousel__item"><img class="carousel__img" src="images/dundelion-big.jpeg" alt="3"></li>
-				<li class="carousel__item"><img class="carousel__img" src="images/red-leaf-big.jpg" alt="4"></li>
-				<li class="carousel__item"><img class="carousel__img" src="images/frozen-big.jpg" alt="5"></li>
-			</ul>
-			<div class="angles">
-				<i class="fa fa-angle-left"></i>
-				<i class="fa fa-angle-right"></i>
-			</div>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carousel</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="carousel" id="carousel">
+		<ul class="carousel__list">
+			<li class="carousel__item">
+				<div class="carousel__position">
+					<div class="carousel__background">
+						<div class="carousel__text-block">
+							<p class="carousel__text">Карусель, карусель начинает рассказ...</p>
+							<!-- <p class="carousel__text">Это сказки, песни и веселье!</p>
+							<p class="carousel__text">Карусель, карусель — это радость для нас,</p>
+							<p class="carousel__text">Прокатись на нашей карусели!</p> -->
+						</div>
+					</div>
+				</div>
+			</li>
+			<!-- <li class="carousel__item"><img class="carousel__img" src="images/sparrow-big.jpeg" alt="2"></li> -->
+			<li class="carousel__item"><img class="carousel__img" src="images/dundelion-big.jpeg" alt="3"></li>
+			<!-- <li class="carousel__item"><img class="carousel__img" src="images/frozen-big.jpg" alt="5"></li> -->
+			<li class="carousel__item">
+				<div class="carousel__position">
+					<div class="carousel__img carousel__background-img">
+						<div class="carousel__text-block">
+							<p class="carousel__text">Все, конец!</p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="angles">
+			<i class="fa fa-angle-left"></i>
+			<i class="fa fa-angle-right"></i>
 		</div>
-		<script src="script.js"></script>
-	</body>
+	</div>
+	<script src="script.js"></script>
+</body>
+
 </html>

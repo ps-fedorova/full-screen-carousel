@@ -1,3 +1,7 @@
+* {
+  outline: red 1px solid;
+}
+
 body {
   margin: 0;
   background-color: #000;
@@ -26,12 +30,44 @@ body {
   float: left;
 }
 
+.carousel__position {
+  width: 100vw;
+  height: 100vh;
+}
+
 .carousel__img {
   width: 100vw;
   height: 100vh;
   background-size: cover;
   object-fit: cover;
   overflow: hidden;
+}
+
+.carousel__background{
+  width: 100vw;
+  height: 100vh;
+  background-color: #292929;
+}
+
+.carousel__background-img {
+  background-image: url(./images/red-leaf-big.jpg);
+}
+
+.carousel__text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+}
+
+.carousel__text {
+  font-size: 40px;
+  color: white;
+  margin: 2px;
+  text-align: center;
 }
 
 .angles {
