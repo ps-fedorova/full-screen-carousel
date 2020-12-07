@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: red 1px solid;
-}
+} */
 
 body {
   margin: 0;
@@ -72,8 +72,6 @@ body {
   color: white;
   margin: 2px;
   text-align: center;
-  position: relative;
-  z-index: 1;
 }
 
 .angles {
@@ -81,7 +79,6 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  z-index: 10;
   color: white;
 }
 
@@ -93,13 +90,20 @@ body {
   right: 0;
 }
 
-.angles_up {
-  display: block;
-  align-items: top;
+.angles_down {
+  transform: translateX(50% - 21px);
+  width: 42px;
+  height: 42px;
+  right: 50%;
+  top: calc(100% - 100px);
 }
 
-.angles_down {
-  display: block;
+.angles_up {
+transform: translateX(50% - 21px);
+width: 42px;
+height: 42px;
+right: 50%;
+top: 0px;
 }
 
 .angles_left-right {
@@ -157,11 +161,7 @@ body {
     display: none;
   }
   .angles_up-down {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
+    display: block;
   }
 
 }

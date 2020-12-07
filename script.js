@@ -23,6 +23,7 @@ function swipeRight() {
   // последнее передвижение вправо на 1 элемент
   position = Math.max(position, -width * (listElem.length - 1));
   list.style.marginLeft = position + 'vw';
+  list.style.transition = '1s';
 }
 
 function swipeLeft() {
@@ -31,6 +32,7 @@ function swipeLeft() {
   // последнее передвижение влево на 1 элемент
   position = Math.min(position, 0)
   list.style.marginLeft = position + 'vw';
+  list.style.transition = '1s';
 }
 
 function swipeUp() {
@@ -39,6 +41,7 @@ function swipeUp() {
   // последнее передвижение вправо на 1 элемент
   position = Math.max(position, -hight * (listElem.length - 1));
   list.style.marginTop = position + 'vh';
+  list.style.transition = '1s';
 }
 
 function swipeDown() {
@@ -47,6 +50,7 @@ function swipeDown() {
   // последнее передвижение влево на 1 элемент
   position = Math.min(position, 0);
   list.style.marginTop = position + 'vh';
+  list.style.transition = '1s';
 }
 
 // Это нужно, чтобы когда пользователь перевернул экран, слайд сохранился
@@ -54,12 +58,14 @@ function handleMobilePhoneResizeMax(e) {
   if (e.matches) {        // Проверяем, верен ли медиа-запрос
     list.style.marginLeft = 0;
     list.style.marginTop = position + 'vh';
+    list.style.transition = '0s';
   }
 }
 function handleMobilePhoneResizeMin(e) {
   if (e.matches) {
     console.log(list.style.marginLeft = position + 'vw');
     console.log(list.style.marginTop = 0);
+    list.style.transition = '0s';
   }
 }
 
