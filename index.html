@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Carousel</title>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,13 +33,16 @@
 				</div>
 			</li>
 		</ul>
-		<div class="angles angles_up-down">
-			<i class="fa fa-angle-up" aria-hidden="true"></i>
-			<i class="fa fa-angle-down" aria-hidden="true"></i>
+		<div class="angles angles_up-down angles_up">
+			<button class="button fa fa-angle-up" aria-hidden="true"></button>
+			<button class="button fa fa-angle-down" aria-hidden="true"></button>
 		</div>
-		<div class="angles angles_left-right">
-			<i class="fa fa-angle-left" aria-hidden="true"></i>
-			<i class="fa fa-angle-right" aria-hidden="true"></i>
+		
+		<div class="angles angles_left-right angles_left ">
+			<button class="button fa fa-angle-left" aria-hidden="true"></button>
+		</div>
+		<div class="angles angles_left-right angles_right">
+			<button class="button fa fa-angle-right" aria-hidden="true"></button>
 		</div>
 	</div>
 	<script src="script.js"></script>
