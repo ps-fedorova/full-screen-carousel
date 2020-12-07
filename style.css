@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: red 1px solid;
-}
+} */
 
 body {
   margin: 0;
@@ -16,6 +16,8 @@ body {
 
 .carousel__list {
   width: 50000000000000vw;
+  height: 50000000000000vh;
+  display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -27,7 +29,8 @@ body {
 
 .carousel__item {
   width: 100vw;
-  float: left;
+  height: 100vh;
+  display: inline;
 }
 
 .carousel__position {
@@ -68,6 +71,8 @@ body {
   color: white;
   margin: 2px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .angles {
@@ -86,6 +91,7 @@ body {
   flex-direction: column;
   height: 100vh;
   align-items: center;
+  display: none;
 }
 
 .fa {
@@ -113,4 +119,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 500px) {
+  .carousel__list {
+    flex-direction: column;
+    margin-top: 0; 
+  }
+  .angles_left-right {
+    display: none;
+  }
+  .angles_up-down {
+    display: flex;
+  }
+
 }
