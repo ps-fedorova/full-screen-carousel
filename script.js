@@ -6,6 +6,8 @@ const listElem = carousel.querySelectorAll('.carousel__item');
 const angleLeft = carousel.querySelector('.fa-angle-left');
 const angleRight = carousel.querySelector('.fa-angle-right')
 
+console.log(angleLeft);
+
 let width = 100; // ширина картинки
 let position = 0; // положение ленты прокрутки
 
