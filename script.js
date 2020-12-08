@@ -8,8 +8,6 @@ const angleRight = carousel.querySelector('.fa-angle-right');
 const angleUp = carousel.querySelector('.fa-angle-up');
 const angleDown = carousel.querySelector('.fa-angle-down');
 
-console.log(angleDown);
-
 const mQueryMax = window.matchMedia('(max-width: 500px)');
 const mQueryMin = window.matchMedia('(min-width: 500px)');
 
